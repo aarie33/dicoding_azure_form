@@ -25,12 +25,13 @@ include('header.php');?>
 				</div>
 		    </form>
 
-			<?php
+		<?php
+		try {
 			$sql_select = "SELECT * FROM User";
             		$stmt = $conn->query($sql_select);
             		$users = $stmt->fetchAll();
 			print_r($users);
-            		//if(count($users) > 0) { ?>
+            		if(count($users) > 0) { ?>
 			    <table class="table table-hover table-striped mt-4">
 			    	<caption>Data user</caption>
 			    	<thead>
@@ -61,9 +62,12 @@ include('header.php');?>
 			    	<?php } ?>
 			    	</tbody>
 			    </table>
-			<?php //}else {
-                //echo "<h3>No one is currently registered.</h3>";
-            //} ?>
+			<?php }else {
+			echo "<h3>No one is currently registered.</h3>";
+		    }
+	} catch(Exception $e) {
+            echo "Failed: " . $e;
+        }?>
 		</div>
 	</div>
 </main>
