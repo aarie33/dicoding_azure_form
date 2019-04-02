@@ -37,12 +37,10 @@ include('header.php');?>
 			    	<thead>
 			    		<tr>
 			    			<th>No</th>
-			    			<th>ID</th>
 			    			<th>Nama</th>
 			    			<th>Email</th>
 			    			<th>Alamat</th>
 			    			<th>Telp</th>
-			    			<th>Aksi</th>
 			    		</tr>
 			    	</thead>
 			    	<tbody>
@@ -55,9 +53,6 @@ include('header.php');?>
 			    			<td><?php echo $us['Email'];?></td>
 			    			<td><?php echo $us['Alamat'];?></td>
 			    			<td><?php echo $us['Telp'];?></td>
-			    			<td><a href="edit.php?id=<?php echo $us['ID'];?>" class="btn btn-sm btn-warning m-1">Edit</a>
-			    				<a href="hapus.php?id=<?php echo $us['ID'];?>" class="btn btn-sm btn-danger m-1">Hapus</a>
-			    			</td>
 			    		</tr>
 			    	<?php } ?>
 			    	</tbody>
