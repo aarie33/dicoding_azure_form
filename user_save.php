@@ -6,7 +6,7 @@ try {
     $email = $_POST['email'];
     $telp = $_POST['telp'];
     // Insert data
-    $sql_insert = "INSERT INTO User (ID, Nama, Alamat, Email, Telp) 
+    $sql_insert = "INSERT INTO [dbo].[User] (ID, Nama, Alamat, Email, Telp) 
                 VALUES ('',?,?,?,?)";
     $stmt = $conn->prepare($sql_insert);
     $stmt->bindValue(1, $nama);
