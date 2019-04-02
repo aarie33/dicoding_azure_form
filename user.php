@@ -27,7 +27,7 @@ include('header.php');?>
 
 		<?php
 		try {
-			$sql_select = "SELECT * FROM User";
+			$sql_select = "SELECT * FROM [dbo].[User]";
             		$stmt = $conn->query($sql_select);
             		$users = $stmt->fetchAll();
 			print_r($users);
