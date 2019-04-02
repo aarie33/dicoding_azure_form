@@ -6,6 +6,7 @@ $db = "firstsql";
 try {
     $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    print("Oke konek");
 }
 catch (PDOException $e) {
     print("Error connecting to SQL Server.");
