@@ -51,12 +51,12 @@ include('header.php');?>
 			    		foreach($users as $us) { ?>
 			    		<tr>
 			    			<td><?php echo $no++;?></td>
-			    			<td><?php echo $us['nama'];?></td>
-			    			<td><?php echo $us['email'];?></td>
-			    			<td><?php echo $us['alamat'];?></td>
-			    			<td><?php echo $us['telp'];?></td>
-			    			<td><a href="edit.php?id=<?php echo $us['id'];?>" class="btn btn-sm btn-warning m-1">Edit</a>
-			    				<a href="hapus.php?id=<?php echo $us['id'];?>" class="btn btn-sm btn-danger m-1">Hapus</a>
+			    			<td><?php echo $us['Nama'];?></td>
+			    			<td><?php echo $us['Email'];?></td>
+			    			<td><?php echo $us['Alamat'];?></td>
+			    			<td><?php echo $us['Telp'];?></td>
+			    			<td><a href="edit.php?id=<?php echo $us['ID'];?>" class="btn btn-sm btn-warning m-1">Edit</a>
+			    				<a href="hapus.php?id=<?php echo $us['ID'];?>" class="btn btn-sm btn-danger m-1">Hapus</a>
 			    			</td>
 			    		</tr>
 			    	<?php } ?>
