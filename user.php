@@ -27,9 +27,10 @@ include('header.php');?>
 
 			<?php
 			$sql_select = "SELECT * FROM User";
-            $stmt = $conn->query($sql_select);
-            $users = $stmt->fetchAll();
-            if(count($users) > 0) { ?>
+            		$stmt = $conn->query($sql_select);
+            		$users = $stmt->fetchAll();
+			print_r($users);
+            		if(count($users) > 0) { ?>
 			    <table class="table table-hover table-striped mt-4">
 			    	<caption>Data user</caption>
 			    	<thead>
